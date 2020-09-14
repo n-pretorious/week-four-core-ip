@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> News Homepage</title>
+        {% endif %}
+    </head>
+    <body>
+    <h1>News</h1>
+        <ul>
+            {% for source in sources %}
+                <li>{{ source.name}}</li>
+                <p>{{ source.category}}</p>
+                <p>{{ source.description}}</p>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
