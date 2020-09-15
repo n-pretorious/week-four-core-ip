@@ -17,13 +17,3 @@ def index():
 def hello():
     return 'Hello, World!'
   
-  
-  
-  
-  # business = getNews('business')
-  # entertainment = getNews('entertainment')
-  # general = getNews('general')
-  # health = getNews('health')
-  # science = getNews('science')
-  # sports = getNews('sports')
-  # technology = getNews('technology')

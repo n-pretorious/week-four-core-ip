@@ -61,4 +61,5 @@ def getNews(sources):
         if getSourcesResponse['sources']:
             newsResultList = getSourcesResponse['sources']
             newsResults = processResults(newsResultList)
+    print(newsResults[0])
     return newsResults
