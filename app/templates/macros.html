@@ -1,7 +1,23 @@
 {% macro displayNews(newsList) %}
 
     {% for news in newsList %}
-        <li>{{ news.name}}</li>
+        <li> 
+            <a href="/news/{{news.id}}">{{ news.name}}</a>
+        </li>
+    {% endfor %}
+
+{% endmacro %}
+
+{% macro displayNewsArticle(articlesList) %}
+
+    {% for article in articlesList %}
+        <ul>
+            <img src="{{ article.urlToImage }}" alt="Article photo" /><br>
+            <li>
+                {{ article.description}} <br>
+                {{ article.publishedAt}}
+            </li>
+        </ul>
     {% endfor %}
 
 {% endmacro %}
