@@ -21,8 +21,7 @@ def news(id):
     View function that returns a news souce
     '''
     articles = getNewsArticles(id)
-    
-    # title = f'{articles.source.id}'
-    title = 'Articles'
+
+    title = f'{id}'
     
     return render_template('news.html', title = title, articles = articles)

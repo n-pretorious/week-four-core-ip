@@ -2,14 +2,14 @@ class News:
     '''
     News class to define News Objects
     '''
-    def __init__(self, id, name, description, url, category, language,
+    def __init__(self, id, name, category, description, url, language,
                  country):
         self.id = id
         self.name = name
-        self.description = description
         self.url = url
-        self.category = category
+        self.description = description
         self.language = language
+        self.category = category
 
 
 class Article:
@@ -22,6 +22,7 @@ class Article:
       self.title = title
       self.description = description
       self.url = url
-      self.urlToImate = urlToImage
+      self.urlToImage = urlToImage
       self.publishedAt = publishedAt
       self.content = content
+      

@@ -105,8 +105,7 @@ def getNewsArticles(id):
     Returns:
         newsArticleObject: an object for a news source
     '''
-    getSourceDetailUrl = base_url.format('everything?sources=' + id + '&',
-                                         api_key)
+    getSourceDetailUrl = base_url.format('everything?sources=' + id + '&', api_key)
 
     with urllib.request.urlopen(getSourceDetailUrl) as url:
         getNewsArticleData = url.read()
